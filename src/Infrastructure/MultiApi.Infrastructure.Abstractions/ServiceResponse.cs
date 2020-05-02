@@ -55,7 +55,16 @@
         /// </summary>
         /// <param name="data">Data returned by the service.</param>
         /// <returns>A new instance of the successful response with the returned data.</returns>
-        public static ServiceResponse<TResponse> BuildSuccess(TResponse data) => new ServiceResponse<TResponse>(true, null, data);
+        public static ServiceResponse<TResponse> BuildSuccess(TResponse data)
+            => new ServiceResponse<TResponse>(true, null, data);
+
+        /// <summary>
+        /// Creates a failure response.
+        /// </summary>
+        /// <param name="errorMessage">Error message.</param>
+        /// <returns>A new instance of the unsuccessful response.</returns>
+        public static new ServiceResponse<TResponse> BuildFailure(string errorMessage)
+            => new ServiceResponse<TResponse>(false, errorMessage);
 
         /// <summary>
         /// Data returned by the service.
