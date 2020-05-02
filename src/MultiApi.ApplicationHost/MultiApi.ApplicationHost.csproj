@@ -4,5 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Presentation\MultiApi.Application\MultiApi.Application.csproj" />
+  </ItemGroup>
+
 
 </Project>
