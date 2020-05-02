@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MultiApi.Application;
+using Serilog;
 
 namespace MultiApi.ApplicationHost
 {
@@ -31,6 +32,8 @@ namespace MultiApi.ApplicationHost
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSerilogRequestLogging();
 
             app.UseHttpsRedirection();
 
