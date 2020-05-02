@@ -1,8 +1,8 @@
 using System;
 
-namespace MultiApi.ApplicationHost
+namespace MultiApi.Infrastructure.WeatherForecast.Dto
 {
-    public class WeatherForecast
+    public class WeatherForecastData
     {
         public DateTime Date { get; set; }
 

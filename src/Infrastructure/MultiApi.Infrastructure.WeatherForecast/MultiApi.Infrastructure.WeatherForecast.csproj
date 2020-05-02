@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\MultiApi.Domain.WeatherForecast\MultiApi.Domain.WeatherForecast.csproj" />
+    <ProjectReference Include="..\MultiApi.Infrastructure.Abstractions\MultiApi.Infrastructure.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

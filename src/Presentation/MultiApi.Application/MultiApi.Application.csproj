@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MultiApi.Module.Abstractions\MultiApi.Module.Abstractions.csproj" />
+    <ProjectReference Include="..\MultiApi.Module.WeatherForecast\MultiApi.Module.WeatherForecast.csproj" />
   </ItemGroup>
 
 </Project>
