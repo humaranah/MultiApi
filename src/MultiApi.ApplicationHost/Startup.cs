@@ -23,6 +23,8 @@ namespace MultiApi.ApplicationHost
             services.AddModuleServices(Configuration);
 
             services.AddControllers();
+
+            services.AddHealthChecks();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +48,7 @@ namespace MultiApi.ApplicationHost
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health");
             });
         }
     }
